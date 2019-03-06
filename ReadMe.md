@@ -70,6 +70,24 @@
   new field called createdAt: DateTime!. This field is also managed by Prisma
   and will be read-only in the API. It stores the time for when a specific Link
   was created.
+  read more : "https://www.prisma.io/docs/1.27/prisma-cli-and-configuration/prisma-yml-5cy7/"
 </p>
+<h3>
+  Here’s a quick explanation of each property you see in that file:
+</h3>
+<ul>
+  <li>
+    endpoint: The HTTP endpoint for your Prisma API.
+  </li>
+  <li>
+    datamodel: Points to the datamodel file which is the foundation for the
+    Prisma client API that you’ll use in your API server.
+  </li>
+
+  <li>
+    generate: Specifies in which language the Prisma client should be generated
+    and where it will be located.
+  </li>
+</ul>
 
 </div>

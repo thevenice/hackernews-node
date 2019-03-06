@@ -3,14 +3,19 @@
 # //add new operation in schema definition
 # One convenient thing about the constructor of the GraphQLServer is that typeDefs can be provided either directly as a string (as you previously did) or by referencing a file that contains your schema definition (this is what you’re doing now).
 
+# Type Defs
+
+# Query: Read type
 type Query {
   info: String!
   feed: [Link!]!
   link(id: String!): Link
 }
+# Mutation:Create,Upadte,Delete type
 type Mutation {
   post(url: String!, description: String!): Link!
 }
+# Type Name:Custom type
 type Link {
   id: ID!
   description: String!
