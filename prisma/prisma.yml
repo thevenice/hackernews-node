@@ -9,3 +9,8 @@ datamodel: datamodel.prisma
 generate:
   - generator: javascript-client
     output: ../src/generated/prisma-client
+# nodemon of prisma
+# auto generate generated folder files when datamodel changes
+hooks:
+  post-deploy:
+    - prisma generate
