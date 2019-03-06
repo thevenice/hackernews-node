@@ -1,4 +1,17 @@
-const typeDefs = 
-type Query{
+# //1 TypeDefs
+# //type name{} is root of that name query
+# //add new operation in schema definition
+# One convenient thing about the constructor of the GraphQLServer is that typeDefs can be provided either directly as a string (as you previously did) or by referencing a file that contains your schema definition (this is what you’re doing now).
+
+type Query {
   info: String!
+  feed: [Link!]!
+}
+type Mutation {
+  post(url: String!, description: String!): Link!
+}
+type Link {
+  id: ID!
+  description: String!
+  url: String!
 }
