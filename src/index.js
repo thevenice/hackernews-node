@@ -41,3 +41,17 @@ const server = new GraphQLServer({
   resolvers
 });
 server.start(() => console.log(`Server is running on http://localhost:4000`));
+
+//practice
+// type Query {
+//   # Fetch a single link by its `id`
+//   link(id: ID!): Link
+// }
+
+// type Mutation {
+//   # Update a link
+//   updateLink(id: ID!, url: String, description: String): Link
+
+//   # Delete a link
+//   deleteLink(id: ID!): Link
+// }
