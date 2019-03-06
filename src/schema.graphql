@@ -20,4 +20,14 @@ type Link {
   id: ID!
   description: String!
   url: String!
+  postedBy: User
+}
+
+# custom user type
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  password: String!
+  links: [Link!]!
 }

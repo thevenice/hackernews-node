@@ -3,7 +3,7 @@ const { GraphQLServer } = require("graphql-yoga");
 //import prisma-client folder to
 //provide data in context
 const { prisma } = require("./generated/prisma-client");
-
+context;
 //2 resolver
 const resolvers = {
   Query: {
