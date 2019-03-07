@@ -7,9 +7,10 @@
 
 # Query: Read type
 # removed from query link(id: String!): Link
+# first skip last are for pagination
 type Query {
   info: String!
-  feed(filter: String): [Link!]!
+  feed(filter: String, skip: Int, first: Int): [Link!]!
 }
 # Mutation:Create,Upadte,Delete type
 type Mutation {
