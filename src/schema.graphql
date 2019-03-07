@@ -6,10 +6,10 @@
 # Type Defs
 
 # Query: Read type
+# removed from query link(id: String!): Link
 type Query {
   info: String!
-  feed: [Link!]!
-  link(id: String!): Link
+  feed(filter: String): [Link!]!
 }
 # Mutation:Create,Upadte,Delete type
 type Mutation {
